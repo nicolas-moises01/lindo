@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POO: Classes e Herança em JavaScript/HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Painel de Veículos</h1>
+    <p class="subtitle">Demonstração Prática de Classes e Herança</p>
+
+    <div class="cards-grid">
+      <div class="card" id="card-carro">
+        <h2>🚗 Carro</h2>
+        <div class="details">
+          <p><strong>Marca:</strong> Toyota</p>
+          <p><strong>Modelo:</strong> Corolla</p>
+          <p><strong>Ano:</strong> 2022</p>
+          <p><strong>Portas:</strong> 4</p>
+          <p><strong>Status:</strong> <span class="status desligado" id="status-carro">Desligado</span></p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-ligar" onclick="carro.ligar()">Ligar</button>
+          <button class="btn btn-desligar" onclick="carro.desligar()">Desligar</button>
+          <button class="btn btn-info" onclick="carro.info()">Exibir Info</button>
+        </div>
+      </div>
+
+      <div class="card" id="card-moto">
+        <h2>🏍️ Moto</h2>
+        <div class="details">
+          <p><strong>Marca:</strong> Triumph</p>
+          <p><strong>Modelo:</strong> Tiger sport 660</p>
+          <p><strong>Ano:</strong> 2026</p>
+          <p><strong>Cilindradas:</strong> 660 cc</p>
+          <p><strong>Status:</strong> <span class="status desligado" id="status-moto">Desligado</span></p>
+        </div>
+        <div class="actions">
+          <button class="btn btn-ligar" onclick="moto.ligar()">Ligar</button>
+          <button class="btn btn-desligar" onclick="moto.desligar()">Desligar</button>
+          <button class="btn btn-info" onclick="moto.info()">Exibir Info</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-header">Terminal de Saída</div>
+      <div class="terminal-body" id="console-output">
+        <p class="system-msg">> Sistema iniciado. Clique nos botões acima para interagir...</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
